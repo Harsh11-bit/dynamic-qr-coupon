@@ -1,0 +1,195 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f2f2f2;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #4a90e2;
+  padding: 20px;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+}
+
+nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  color: #4a90e2;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: #e6e6e6;
+}
+
+/* Main Content */
+main {
+  margin-top: 30px;
+}
+
+/* Containers for Forms and Tables */
+.form-container,
+.table-container {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* New CSS for inline form fields - professional alignment */
+.form-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  width: 150px; /* fixed width for labels */
+  text-align: right;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button Styling */
+.form-container button {
+  background: #4a90e2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-container button:hover {
+  background: #357ab8;
+}
+
+/* QR Code Container */
+.qr-code-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Styling */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.table-container th {
+  background: #3578E5;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table-container tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row label {
+    width: auto;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+}
+
+/* Styles for action buttons in Admin Panel */
+.action-button {
+  display: inline-block;
+  width: 80px;      /* fixed width */
+  height: 30px;      /* fixed height */
+  line-height: 30px; /* vertically center text */
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+  margin: 0 3px;     /* smaller horizontal margin */
+  font-size: 0.9em;  /* optional: slightly smaller font size */
+}
+
+.update-button {
+  background: #4a90e2;
+  color: #fff;
+}
+
+.update-button:hover {
+  background: #357ab8;
+}
+
+.delete-button {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background: #c0392b;
+}
